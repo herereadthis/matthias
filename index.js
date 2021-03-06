@@ -1,13 +1,10 @@
 const Block = require('./src/classes/block');
 const Blockchain = require('./src/classes/blockchain');
 
-console.log('hello world');
-
 const matthiasCoin = new Blockchain();
 
-const newBlock = new Block(0, new Date(), {foo: 'bar'});
+matthiasCoin.addBlock(new Block(matthiasCoin.blockchainLength, new Date(), {transaction: 24.95}));
+matthiasCoin.addBlock(new Block(matthiasCoin.blockchainLength, new Date(), {transaction: 14.50}));
 
-matthiasCoin.addBlock(newBlock);
-
-console.log(matthiasCoin);
-
+console.log(matthiasCoin.toJSON());
+console.log(`isValid: ${matthiasCoin.isChainValid}`);

@@ -3,29 +3,62 @@ const dayjs = require('dayjs');
 
 const Block = require('./block');
 
-module.exports = class Blockchain {
+class Blockchain {
 
     constructor() {
         this.chain = [this.createGenesisBlock()];
     }
 
     createGenesisBlock() {
-        return new Block(0, '2021-03-05T23:43:36-05:00', 'Genesis Block', '0');
+        return new Block(0, dayjs('2021-03-05T23:43:36-05:00').format(), 'genesis', '0');
+    }
+
+    get blockchainLength() {
+        return this.chain.length;
     }
 
     get latestBlock() {
-        return this.chain[this.chain.length - 1];
+        return this.chain[this.blockchainLength - 1];
     }
 
     get isChainValid() {
+        return this.chain.every((block, chainIndex) => {
+            let valid = true;
 
+            if (block.hash !== block.calculateHash()) {
+                valid = false;
+            }
+
+            if (block.index !== chainIndex) {
+                valid = false;
+            }
+
+            // The previous hash of genesis block is automatically valid.
+            // Only check subsequent blocks.
+            if (chainIndex > 0) {
+                let previousBlock = this.chain[chainIndex - 1];
+
+                if (block.previousHash !== previousBlock.hash) {
+                    valid = false;
+                }
+            }
+            return valid;
+        });
     }
 
     addBlock(newBlock) {
-        console.log(this.latestBlock);
         newBlock.previousHash = this.latestBlock.hash;
-        console.log('previouHash', newBlock.previousHash);
         newBlock.hash = newBlock.calculateHash();
         this.chain.push(newBlock);
     }
+
+    toJSON() {
+        return this.chain.map((block) => {
+            return block.toJSON();
+        });
+    }
 }
+
+
+
+module.exports = Blockchain;
