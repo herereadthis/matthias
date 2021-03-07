@@ -7,10 +7,11 @@ class Blockchain {
 
     constructor() {
         this.chain = [this.createGenesisBlock()];
+        this.difficulty = 4;
     }
 
     createGenesisBlock() {
-        return new Block(0, dayjs('2021-03-05T23:43:36-05:00').format(), 'genesis', '0');
+        return new Block(dayjs('2021-03-05T23:43:36-05:00').format(), 'genesis', '0');
     }
 
     get blockchainLength() {
@@ -48,7 +49,8 @@ class Blockchain {
 
     addBlock(newBlock) {
         newBlock.previousHash = this.latestBlock.hash;
-        newBlock.hash = newBlock.calculateHash();
+        // newBlock.hash = newBlock.calculateHash();
+        newBlock.mineBlock(this.difficulty);
         this.chain.push(newBlock);
     }
 
