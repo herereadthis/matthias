@@ -4,13 +4,14 @@ const {isObject} = require('lodash');
 
 module.exports = class Block {
 
-    constructor(timestamp, data, previousHash = '') {
-        this.timestamp = Block.getTimestamp(timestamp);
-        this.data = data;
+    constructor(timestamp, transactions, previousHash = '') {
         this.previousHash = previousHash;
+        this.timestamp = Block.getTimestamp(timestamp);
+        this.transactions = transactions;
         this.hash = this.calculateHash();
-        // The hash of the block will change if you change the contents of the block. Nonce value is a random number
-        // that has nothing to do with the contents of the block.
+        // The hash of the block will change if you change the contents of the
+        // block. Nonce value is a random number that has nothing to do with
+        // the contents of the block.
         this.nonce = 0;
     }
 
@@ -39,20 +40,30 @@ module.exports = class Block {
         console.log(`Block mined: ${this.hash}`);
     }
 
+    hasValidTransactions() {
+        for (const tx of this.transactions) {
+            if (!tx.isValid()) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
     toJSON() {
         const {
             timestamp,
-            data,
+            transactions,
             previousHash,
             hash,
             nonce
         } = this;
         return {
             timestamp,
-            data,
+            transactions: transactions.map(t => t.toJSON()),
             previousHash,
             hash,
             nonce
         };
     }
-}
+};
