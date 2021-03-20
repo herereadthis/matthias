@@ -3,14 +3,9 @@ const {isNil, isEmpty, isFinite} = require('lodash');
 const {ec: EC} = require('elliptic');
 const ec = new EC('secp256k1');
 
-// need a way to sign the transaction
-
-// need a way to check whether the signature is valid
-
 class Transaction {
 
     /**
-     *
      * @param {string} fromAddress
      * @param {string} toAddress
      * @param {string} amount
@@ -60,8 +55,8 @@ class Transaction {
 
     /**
      * Check to see if the signature is valid.
-     *
      * Mining rewards are automatically valid.
+     *
      * @returns {boolean}
      */
     get isValid() {
@@ -82,6 +77,11 @@ class Transaction {
 
     }
 
+    /**
+     * Return a JSON-formatted transaction with all data. Can be used as backup.
+     *
+     * @returns {object}
+     */
     toJSON() {
         const {
             fromAddress,

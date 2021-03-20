@@ -1,6 +1,6 @@
 const sha256 = require('crypto-js/sha256');
 const dayjs = require('dayjs');
-const {isNil, isEmpty} = require('lodash');
+const {isNil, flatMap} = require('lodash');
 
 const Block = require('./block');
 const Transaction = require('./transaction');
@@ -9,7 +9,7 @@ class Blockchain {
 
     constructor() {
         this.chain = [this.createGenesisBlock()];
-        this.difficulty = 5;
+        this.difficulty = 3;
         this.pendingTransactions = [];
         this.miningReward = 100;
     }
@@ -75,7 +75,9 @@ class Blockchain {
      */
     getAddressBalance(address) {
         let balance = 0;
-        const allTransactions = this.chain.flatMap(block => block.transactions);
+
+        const blockChainAsJson = this.toJSON();
+        const allTransactions = flatMap(blockChainAsJson, block => block.transactions);
 
         allTransactions.forEach((transaction) => {
             if (transaction.fromAddress === address) {
@@ -93,15 +95,15 @@ class Blockchain {
             let valid = true;
 
             // make sure all transactions in current block are valid
-            if (!block.hasValidTransactions()) {
+            if (!block.hasValidTransactions) {
+                console.log(1);
                 valid = false;
             }
 
             if (block.hash !== block.calculateHash()) {
-                valid = false;
-            }
-
-            if (block.index !== chainIndex) {
+                console.log(block.hash);
+                console.log(block.calculateHash());
+                console.log(2);
                 valid = false;
             }
 
@@ -111,6 +113,7 @@ class Blockchain {
                 let previousBlock = this.chain[chainIndex - 1];
 
                 if (block.previousHash !== previousBlock.hash) {
+                    console.log(4);
                     valid = false;
                 }
             }
@@ -118,6 +121,11 @@ class Blockchain {
         });
     }
 
+    /**
+     * Return a JSON-formatted blockchain with all data. Can be used as backup.
+     *
+     * @returns {object}
+     */
     toJSON() {
         return this.chain.map((block) => {
             return block.toJSON();
