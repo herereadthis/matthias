@@ -1,0 +1,35 @@
+[
+    {
+        "id": "d05839f6-3fde-40dd-851e-8b96b0d9797a",
+        "type": "jpg",
+        "title": "The Roses of Heliogabalus",
+        "creator": "Lawrence Alma-Tadema",
+        "created": "1888",
+        "notes": "oil painting",
+        "width": 6000,
+        "height": 3694,
+        "source": "https://upload.wikimedia.org/wikipedia/commons/3/33/The_Roses_of_Heliogabalus.jpg"
+    },
+    {
+        "id": "662da487-cadf-4f18-88b7-d632eb234f14",
+        "type": "jpg",
+        "title": "Arnolfini Portrait",
+        "creator": "Jan van Eyck",
+        "created": "1424",
+        "notes": "oil painting",
+        "width": 4386,
+        "height": 6000,
+        "source": null
+    },
+    {
+        "id": "a9839e25-7731-43c2-9cb9-1680205b449e",
+        "type": "jpg",
+        "title": "A Sudden Gust of Wind (after Hokusai)",
+        "creator": "Jeff Wall",
+        "created": "1993",
+        "notes": "oil painting",
+        "width": 3000,
+        "height": 1850,
+        "source": null
+    }
+]
