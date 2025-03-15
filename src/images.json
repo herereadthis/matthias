@@ -31,5 +31,24 @@
         "width": 3000,
         "height": 1850,
         "source": null
+    },
+    {
+        "id": "f0534844-d350-4a40-8740-9e0d807bf974",
+        "type": "jpg",
+        "title": "The Vision and Inspiration (Joan of Arc series: I)",
+        "creator": "Louis Maurice Boutet de Monvel",
+        "created": "1907",
+        "notes": "oil painting, gold leaf",
+        "width": 4096,
+        "height": 1810,
+        "source": "https://www.nga.gov/collection/art-object-page.195106.html",
+        "sizes": [
+            {
+                "width": 700,
+                "height": 309,
+                "id": "2505902c-4837-4621-abba-a51a9993858a",
+                "type": "jpg"
+            }
+        ]
     }
 ]
