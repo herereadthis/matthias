@@ -25,8 +25,8 @@ jobs:
 
         markdown=$(cat << EOF
         ### Validate Environment
-        * Python Version: $python_version
-        * Poetry Version: $poetry_version
+        * Python Version: <code>$python_version</code>
+        * Poetry Version: <code>$poetry_version</code>
         EOF
         )
         echo "$markdown" >> $GITHUB_STEP_SUMMARY
