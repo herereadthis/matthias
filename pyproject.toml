@@ -1,0 +1,18 @@
+[project]
+name = "matthias"
+version = "0.1.0"
+description = "image hosting"
+authors = [
+    {name = "herereadthis",email = "herereadthis.github@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "boto3 (>=1.37.13,<2.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
