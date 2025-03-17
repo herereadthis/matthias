@@ -13,18 +13,23 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version-file: 'pyproject.toml' 
+        python-version-file: pyproject.toml
     - name: Install Poetry
       run: |
         pip install poetry
+    - name: Run Tests
+      run: |
+        poetry run pytest
     - name: Validate Environment
       shell: bash
       run: |
         python_version=$(python --version)
         poetry_version=$(poetry --version)
+        pip_version=$(pip --version)
 
         markdown=$(cat << EOF
         ### Validate Environment
+        * Pip Version: <code>$pip_version</code>
         * Python Version: <code>$python_version</code>
         * Poetry Version: <code>$poetry_version</code>
         EOF
