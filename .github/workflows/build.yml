@@ -22,5 +22,11 @@ jobs:
       run: |
         python_version=$(python --version)
         poetry_version=$(poetry --version)
-        echo "Python Version: $python_version" >> $GITHUB_STEP_SUMMARY
-        echo "Poetry Version: $poetry_version" >> $GITHUB_STEP_SUMMARY
+
+        markdown=$(cat << EOF
+        ### Validate Environment
+        * Python Version: $python_version
+        * Poetry Version: $poetry_version
+        EOF
+        )
+        echo "$markdown" >> $GITHUB_STEP_SUMMARY
