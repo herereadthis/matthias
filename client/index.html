@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Upload</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Matthias Image Uploader</h1>
+        <form id="uploadForm">
+            <input type="file" id="imageInput" accept="image/*">
+            <button type="submit">Upload Image</button>
+        </form>
+        <div id="status"></div>
+    </div>
+    <!-- Place scripts at end of body! It ensures the browser will load DOM -->
+    <!-- elements before script execution, so that the script won't fail if -->
+    <!-- is looking elements that aren't yet available. -->
+    <script src="/scripts/upload.js"></script>
+</body>
+</html>

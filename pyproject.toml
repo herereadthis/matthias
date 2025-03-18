@@ -9,7 +9,10 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "boto3 (>=1.37.13,<2.0.0)",
-    "python-dotenv (>=1.0.1,<2.0.0)"
+    "python-dotenv (>=1.0.1,<2.0.0)",
+    "fastapi (>=0.115.11,<0.116.0)",
+    "uvicorn[standard] (>=0.34.0,<0.35.0)",
+    "python-multipart (>=0.0.20,<0.0.21)"
 ]
 urls = {repository = "https://github.com/herereadthis/matthias"}
 
@@ -23,9 +26,15 @@ pytest-cov = "^6.0.0"
 pytest-asyncio = "^0.25.3"
 
 [tool.pytest.ini_options]
+# Minimum Pytest version
 minversion = "8.0"
+# -ra extra text summary, -q run quietly
 addopts = "-ra -q"
+# Directory for test files
 testpaths = ["tests"]
+# Add current directory to Python path
 pythonpath = "."
+# Automatic detection of async/sync tests
 asyncio_mode = "auto"
+# Set default scope for pytest-asyncio fixture loops to function level
 asyncio_default_fixture_loop_scope = "function"

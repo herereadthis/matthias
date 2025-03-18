@@ -1,0 +1,23 @@
+{
+  "name": "@matthias/client",
+  "version": "1.0.0",
+  "description": "image hosting",
+  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite --port 8080 --no-open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herereadthis/matthias.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/herereadthis/matthias/issues"
+  },
+  "homepage": "https://github.com/herereadthis/matthias#readme",
+  "devDependencies": {}
+}
