@@ -1,0 +1,84 @@
+[
+    {
+        "id": "d05839f6-3fde-40dd-851e-8b96b0d9797a",
+        "type": "jpg",
+        "title": "The Roses of Heliogabalus",
+        "creator": "Lawrence Alma-Tadema",
+        "created": "1888",
+        "notes": "oil painting",
+        "width": 6000,
+        "height": 3694,
+        "source": "https://upload.wikimedia.org/wikipedia/commons/3/33/The_Roses_of_Heliogabalus.jpg"
+    },
+    {
+        "id": "662da487-cadf-4f18-88b7-d632eb234f14",
+        "type": "jpg",
+        "title": "Arnolfini Portrait",
+        "creator": "Jan van Eyck",
+        "created": "1424",
+        "notes": "oil painting",
+        "width": 4386,
+        "height": 6000,
+        "source": null
+    },
+    {
+        "id": "a9839e25-7731-43c2-9cb9-1680205b449e",
+        "type": "jpg",
+        "title": "A Sudden Gust of Wind (after Hokusai)",
+        "creator": "Jeff Wall",
+        "created": "1993",
+        "notes": "oil painting",
+        "width": 3000,
+        "height": 1850,
+        "source": null
+    },
+    {
+        "id": "fd35bcd3-b90c-4f42-9891-0ba02d588d62",
+        "type": "png",
+        "title": "St. Luigi. The Patron Saint of The Abandoned",
+        "creator": "Gedogfx",
+        "created": "2024-12-10",
+        "notes": "reddit",
+        "width": 1328,
+        "height": 1528,
+        "source": "https://www.reddit.com/r/funny/comments/1hbd3hg/st_luigi_the_patron_saint_of_the_abandoned/"
+    },
+    {
+        "id": "37ebd9af-3443-4d4f-b0de-3960a506c9d3",
+        "type": "jpg",
+        "title": "Igor Stravinsky",
+        "creator": "Arnold Newman",
+        "created": "1946",
+        "notes": "Black and white photograph",
+        "width": 2000,
+        "height": 1081,
+        "source": "https://www.moma.org/collection/works/55329",
+        "sizes": [
+            {
+                "width": 700,
+                "height": 379,
+                "id": "00b29563-f9e0-4895-91d4-ed3a922ac785",
+                "type": "jpg"
+            }
+        ]
+    },
+    {
+        "id": "f0534844-d350-4a40-8740-9e0d807bf974",
+        "type": "jpg",
+        "title": "The Vision and Inspiration (Joan of Arc series: I)",
+        "creator": "Louis Maurice Boutet de Monvel",
+        "created": "1907",
+        "notes": "oil painting, gold leaf",
+        "width": 4096,
+        "height": 1810,
+        "source": "https://www.nga.gov/collection/art-object-page.195106.html",
+        "sizes": [
+            {
+                "width": 700,
+                "height": 309,
+                "id": "2505902c-4837-4621-abba-a51a9993858a",
+                "type": "jpg"
+            }
+        ]
+    }
+]
