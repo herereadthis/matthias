@@ -25,7 +25,7 @@ form.onsubmit = async (e) => {
     console.log(formData);
     
     try {
-        const response = await fetch(`${API_URL}/upload`, {
+        const response = await fetch(`${API_URL}/image`, {
             method: 'POST',
             body: formData
         });

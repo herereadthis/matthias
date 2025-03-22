@@ -6,3 +6,4 @@ npm-debug.log
 .env
 __pycache__/
 *.pyc
+/.pytest_cache/

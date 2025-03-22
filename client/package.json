@@ -19,5 +19,7 @@
     "url": "https://github.com/herereadthis/matthias/issues"
   },
   "homepage": "https://github.com/herereadthis/matthias#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "vite": "^6.2.2"
+  }
 }
