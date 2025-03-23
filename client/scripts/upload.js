@@ -1,10 +1,37 @@
 const API_URL = window.location.hostname === 'localhost' 
-    ? 'http://localhost:8080'
+    ? 'http://localhost:8000'
     : 'https://api.your-domain.com';
 
 const form = document.getElementById('uploadForm');
 const status = document.getElementById('status');
 const submitButton = form.querySelector('button');
+
+const clearButton = document.getElementById('clearButton');
+
+console.log(clearButton);
+
+clearButton.onclick = async () => {
+    console.log('you clicked the button');
+    const fileField = document.getElementById('imageInput');
+    fileField.value = '';
+    status.textContent = '';
+    submitButton.disabled = false;
+    const serverResponse = await checkServer();
+    console.log(serverResponse);
+}
+
+
+const checkServer = async () => {
+    try {
+        const response = await fetch(`${API_URL}/`);
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        const result = await response.json();
+        return result;
+    } catch (error) {
+        console.error('Server check failed:', error);
+        throw error;
+    }
+}
 
 form.onsubmit = async (e) => {
     e.preventDefault();

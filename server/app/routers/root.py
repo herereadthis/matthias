@@ -8,5 +8,6 @@ router = APIRouter()
 # The @ decorator is used to specify the route
 @router.get("/")
 def read_root():
+    print("you have called GET /")
     return {"message": "Hello, world!"}
     
