@@ -29,6 +29,7 @@ packages = [
 pytest = "^8.3.5"
 pytest-cov = "^6.0.0"
 pytest-asyncio = "^0.25.3"
+httpx = "^0.28.1"
 
 [tool.poetry.scripts]
 serve = "app.serve:main"
