@@ -1,24 +1,29 @@
 [project]
 name = "matthias"
 version = "0.1.0"
-description = "image hosting"
+description = "image hosting API"
 authors = [
-    {name = "herereadthis",email = "herereadthis.github@gmail.com"}
+    { name = "herereadthis", email = "herereadthis.github@gmail.com" }
 ]
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "boto3 (>=1.37.13,<2.0.0)",
+    "boto3 (>=1.37.18,<2.0.0)",
     "python-dotenv (>=1.0.1,<2.0.0)",
     "fastapi (>=0.115.11,<0.116.0)",
     "uvicorn[standard] (>=0.34.0,<0.35.0)",
     "python-multipart (>=0.0.20,<0.0.21)"
 ]
-urls = {repository = "https://github.com/herereadthis/matthias"}
+urls = { repository = "https://github.com/herereadthis/matthias" }
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [
+    { include = "app" }
+]
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.5"
@@ -26,7 +31,7 @@ pytest-cov = "^6.0.0"
 pytest-asyncio = "^0.25.3"
 
 [tool.poetry.scripts]
-start = "uvicorn src.matthias.main:app --reload"
+serve = "app.serve:main"
 
 [tool.pytest.ini_options]
 # Minimum Pytest version
@@ -41,3 +46,4 @@ pythonpath = "."
 asyncio_mode = "auto"
 # Set default scope for pytest-asyncio fixture loops to function level
 asyncio_default_fixture_loop_scope = "function"
+
