@@ -6,20 +6,12 @@ const form = document.getElementById('uploadForm');
 const status = document.getElementById('status');
 const submitButton = form.querySelector('button');
 
-const clearButton = document.getElementById('clearButton');
+const checkServerButton = document.getElementById('checkServerButton');
 
-console.log(clearButton);
-
-clearButton.onclick = async () => {
-    console.log('you clicked the button');
-    const fileField = document.getElementById('imageInput');
-    fileField.value = '';
-    status.textContent = '';
-    submitButton.disabled = false;
+checkServerButton.onclick = async () => {
     const serverResponse = await checkServer();
     console.log(serverResponse);
 }
-
 
 const checkServer = async () => {
     try {
