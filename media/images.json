@@ -80,5 +80,62 @@
                 "type": "jpg"
             }
         ]
+    },
+    {
+        "id": "48695d47-a34f-45ca-96e9-7b2404235d53",
+        "type": "jpg",
+        "title": "Bibidibobidibo ",
+        "creator": "Maurizio Cattelan",
+        "created": "1996",
+        "notes": "contemporary art, squirrel, taxidermy",
+        "width": 5321,
+        "height": 3747,
+        "source": "https://artsupp.com/en/artists/maurizio-cattelan/bidibidobidiboo",
+        "sizes": [
+            {
+                "width": 493,
+                "height": 700,
+                "id": "94ffd2f1-dc71-44e0-8f43-7916aafb305c",
+                "type": "jpg"
+            }
+        ]
+    },
+    {
+        "id": "b80be7b6-cfd3-4be3-8556-c0fca2769bec",
+        "type": "jpg",
+        "title": "Female Natives",
+        "creator": "Haegue Yang",
+        "created": "2010",
+        "notes": "contemporary art, sculpture",
+        "width": 5400,
+        "height": 3857,
+        "source": "https://www.artsy.net/artwork/haegue-yang-female-natives-no-3-saturation-out-of-season",
+        "sizes": [
+            {
+                "width": 700,
+                "height": 500,
+                "id": "df05d7f7-5020-4afe-9236-f78dfa0e6bac",
+                "type": "jpg"
+            }
+        ]
+    },
+    {
+        "id": "355fb0ee-3422-439f-9f40-0af7fef62068",
+        "type": "jpg",
+        "title": "Plan B",
+        "creator": "Ayşe Erkmen",
+        "created": "2011",
+        "notes": "contemporary art, venice biennale, water filtration",
+        "width": 1600,
+        "height": 1198,
+        "source": "https://trautweinherleth.de/artists/ayse-erkmen/",
+        "sizes": [
+            {
+                "width": 700,
+                "height": 700,
+                "id": "341cb188-4a9a-465f-b79e-56cc99113961",
+                "type": "jpg"
+            }
+        ]
     }
 ]
