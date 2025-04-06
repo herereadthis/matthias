@@ -137,5 +137,81 @@
                 "type": "jpg"
             }
         ]
+    },
+    {
+        "id": "e688221c-38ad-4476-9e67-821118cfc45a",
+        "type": "jpg",
+        "title": "Untitled, 2018",
+        "creator": "Maurizio Cattelan",
+        "created": "2011",
+        "notes": "contemporary art, sistine chapel, fresco at Yuz Museum, Shanghai",
+        "width": 1667,
+        "height": 1111,
+        "source": "https://www.facebook.com/GUCCI/photos/10156480870391013/",
+        "sizes": [
+            {
+                "width": 700,
+                "height": 467,
+                "id": "910c20fd-9eed-47b5-939e-b97a04b54fdd",
+                "type": "jpg"
+            }
+        ]
+    },
+    {
+        "id": "5e733e64-47fe-4317-b7e6-793053f148d3",
+        "type": "jpg",
+        "title": "Brood and Bitter Pass",
+        "creator": "Helen Marten",
+        "created": "2015",
+        "notes": "contemporary art, sculpture, mixed media",
+        "width": 2400,
+        "height": 1128,
+        "source": "https://greenenaftaligallery.com/exhibitions/helen-marten",
+        "sizes": [
+            {
+                "width": 700,
+                "height": 467,
+                "id": "75348306-5b80-499f-8b35-7cb9ea6ba9c3",
+                "type": "jpg"
+            }
+        ]
+    },
+    {
+        "id": "ef4f30cf-9802-4fd3-bf50-1a3e3f8e32e9",
+        "type": "jpg",
+        "title": "Weather Project",
+        "creator": "Olafur Eliasson",
+        "created": "2003",
+        "notes": "contemporary art, sculpture, Tate Modern, London",
+        "width": 1305,
+        "height": 1600,
+        "source": "https://www.tanyabonakdargallery.com/exhibitions/456-olafur-eliasson-the-weather-project-tate-modern-london/",
+        "sizes": [
+            {
+                "width": 700,
+                "height": 600,
+                "id": "33eb09d1-416a-456b-8eaa-29db660cf69d",
+                "type": "jpg"
+            }
+        ]
+    },
+    {
+        "id": "afa4cd02-12e6-455f-b03f-96c2d16467f5",
+        "type": "jpg",
+        "title": "Ten Thousand Waves",
+        "creator": "Isaac Julien",
+        "created": "2010",
+        "notes": "contemporary art, installation, video",
+        "width": 2000,
+        "height": 1333,
+        "source": "https://www.isaacjulien.com/projects/ten-thousand-waves/",
+        "sizes": [
+            {
+                "width": 700,
+                "height": 467,
+                "id": "7a7fa5ef-af83-48a0-9a82-b6010a9e4b7f",
+                "type": "jpg"
+            }
+        ]
     }
 ]
