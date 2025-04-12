@@ -213,5 +213,43 @@
                 "type": "jpg"
             }
         ]
+    },
+    {
+        "id": "f982c9f6-7057-4e8d-b414-3d7e6e6a20d9",
+        "type": "png",
+        "title": "Tokyo Metropolis Map",
+        "creator": "Tokyoship",
+        "created": "2012",
+        "notes": "map",
+        "width": 2000,
+        "height": 1333,
+        "source": "https://commons.wikimedia.org/wiki/File%3ATokyo_Metropolis_Map.svg",
+        "sizes": [
+            {
+                "width": 700,
+                "height": 467,
+                "id": "be79461b-f060-4560-95fe-54c20c2baa9e",
+                "type": "jpg"
+            }
+        ]
+    },
+    {
+        "id": "2741abf0-7bbc-48e9-ba12-ee64ca3fd715",
+        "type": "jpg",
+        "title": "Melun Diptych",
+        "creator": "Jean Fouquet",
+        "created": "1452",
+        "notes": "madonna, child, Agnès Sorel",
+        "width": 3153,
+        "height": 3508,
+        "source": "https://en.wikipedia.org/wiki/File:Fouquet_Madonna.jpg",
+        "sizes": [
+            {
+                "width": 629,
+                "height": 700,
+                "id": "2cbbd8c6-da72-4684-9650-c582c80c98e1",
+                "type": "jpg"
+            }
+        ]
     }
 ]
